@@ -32,7 +32,10 @@ const Select = ({ label, value, children, ...delegated }) => {
   );
 };
 
-const Wrapper = styled.label``;
+const Wrapper = styled.label`
+  display: flex;
+  align-items: baseline;
+`;
 
 const VisibleLabel = styled.span`
   color: ${COLORS.gray[700]};
@@ -58,7 +61,7 @@ const NativeSelect = styled.select`
 const DisplayedBit = styled.span`
   display: block;
   background: ${COLORS.gray[100]};
-  font-size: 1rem;
+  font-size: ${14 / 16}rem;
   font-weight: ${WEIGHTS.medium};
   color: ${COLORS.gray[900]};
   padding: 12px 42px 12px 16px;

@@ -1,9 +1,11 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
+import Header from '../Header';
 import { WEIGHTS } from '../../constants';
 
 const Logo = (props) => {
+  console.log(Header.MainHeader);
   return (
     <Link href="/">
       <Wrapper {...props}>Sole&amp;Ankle</Wrapper>
